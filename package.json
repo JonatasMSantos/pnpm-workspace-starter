@@ -1,0 +1,21 @@
+{
+  "name": "pnpm-workspace-starter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "model": "pnpm --filter @pnpm-workspace-starter/model build",
+    "server:dev": "pnpm model && pnpm --filter @pnpm-workspace-starter/server start:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pnpm-workspace-starter/model": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
+  }
+}
